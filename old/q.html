@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        #header {
+            background-color: gray;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #sidebar {
+            float: left;
+            width: 15%;
+            background-color: red;
+        }
+
+        #main {
+            margin-left: 16%;
+            width: 84%;
+            background-color: lightgray;
+        }
+
+        #sidebar-right {
+            float: left;
+            width: 15%;
+            background-color: red;
+        }
+
+        #footer {
+            margin-top: 10px;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: gray;
+        }
+
+        #sidebar-left, #main, #sidebar {
+            min-height: 400px
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">In this example, the image is taller than the element containing it, and it is floated, so it overflows outside of its container:</div>
+
+    <div id="sidebar">
+       
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+
+    <div id="main">Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</div>
+
+    <div id="footer">
+        
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum...
+    </div>
+
+</body>
+</html>
