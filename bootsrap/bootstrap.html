@@ -5,11 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap.minn.css" rel="stylesheet" />
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js" ></script>
 </head>
 <body>
+        <div class="container">
+                <h2>Colored Spinners</h2>
+                <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
+                                                      
+                <div class="spinner-border text-muted"></div>
+                <div class="spinner-border text-primary"></div>
+                <div class="spinner-border text-success"></div>
+                <div class="spinner-border text-info"></div>
+                <div class="spinner-border text-warning"></div>
+                <div class="spinner-border text-danger"></div>
+                <div class="spinner-border text-secondary"></div>
+                <div class="spinner-border text-dark"></div>
+                <div class="spinner-border text-light"></div>
+
+                <div class="spinner-grow text-muted"></div>
+<div class="spinner-grow text-primary"></div>
+<div class="spinner-grow text-success"></div>
+<div class="spinner-grow text-info"></div>
+<div class="spinner-grow text-warning"></div>
+<div class="spinner-grow text-danger"></div>
+<div class="spinner-grow text-secondary"></div>
+<div class="spinner-grow text-dark"></div>
+<div class="spinner-grow text-light"></div>
+              </div>
+              
     <button class="btn btn-danger">click</button>
     <button class="btn btn-success">click</button>
     <button class="btn btn-info">click</button>
@@ -24,6 +50,24 @@
 <button type="button" class="btn btn-outline-danger">Danger</button>
 <button type="button" class="btn btn-outline-dark">Dark</button>
 <button type="button" class="btn btn-outline-light text-dark">Light</button>
-<p class="btn btn-danger">dkjfhndjkfhi kejrfioewjr</p>
+
+
+<div class="toast">
+        <div class="toast-header">
+          Toast Header gvyhg
+        </div>
+        <div class="toast-body">
+          Some text inside the toast body
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+    <script>
+            $(document).ready(function(){
+              $("#myBtn").click(function(){
+                $('.toast').toast('show');
+              });
+            });
+            </script>
 </body>
 </html>
