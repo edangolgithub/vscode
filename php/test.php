@@ -1,6 +1,7 @@
 <?php
-$a="hello world";
-echo $a;
+$a=9;
+$b=8;
+echo $a+$b;
 
 
 
