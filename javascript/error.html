@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="a" />
+    <h1 id="x"></h1>
+    <button onclick="ccc()">click</button>
+    
+    <script>
+function ccc()
+{
+    var m;
+    try
+    {
+    m=document.getElementById("a").value;
+    if(m=="suresh")
+{
+    throw "basundhara";
+}
+else if(m=="ashish")
+{
+    throw "banasthali";
+}
+else if(m=="sarmila")
+{
+    throw "dhapasi";
+}
+
+    }
+    catch(err)
+    {
+    document.write(err);
+    }
+}
+
+
+
+  try
+  {
+    document.writey("hello");
+  }
+  catch(err)
+  {
+      document.write(err.message);
+  }
+
+
+    </script>
+
+    <script>
+//     var pi=3.14;
+// try{
+//     if(pi!=3.14)
+//     {
+//         throw "error in pi value";
+//     }
+//     document.write(pi);
+//    }
+//     catch(err)
+//     {
+//      document.write(err);
+//     }
+
+
+
+    </script>
+</body>
+</html>
