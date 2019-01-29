@@ -5,19 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+ <style>
+     .black{
+background-color: rgb(28, 238, 133);
+     }
+     .red{
+        background-color: red;
+     }
+ </style>
+
+    </div>
     <script>
         function style1()
         {
         document.getElementById("t").style.border="2px solid #f00";
-        document.getElementById("t").style.backgroundColor="#ff0";
+       // document.getElementById("t").style.backgroundColor="#ff0";
         document.getElementById("t").style.width="300px";
         document.getElementById("t").style.padding="5px";
         document.getElementById("t").style.textAlign="center";
         document.getElementById("t").style.textTransform="uppercase";
+        document.getElementById("e").innerHTML="hello hi";
+        document.getElementById("t").class = "black";
+        document.getElementById("t").classList.remove("red");
+        document.getElementById("t").classList.add("black");
+        document.getElementById("e").classList.remove("black");
+        document.getElementById("e").classList.add("red"); 
+      
+        }
+        function chim()
+        {
+            document.getElementById("n").src="../images/b.jpg";
+        }
+        function dhim()
+        {
+            document.getElementById("n").src="../images/a .jpg";
         }
     </script>
 </head>
 <body onload="style1()">
-    <h1 id="t">this is heading</h1>  
+    <h1 id="t" class="red">this is heading</h1> 
+    <h1 id="e" class="black">sarmila ashish</h1> 
+    <img id="n" onmouseover="chim()" onmouseout="dhim()" width="200" height="200" src="../images/a.jpg" />
 </body>
 </html>
