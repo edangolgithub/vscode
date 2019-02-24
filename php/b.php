@@ -1,0 +1,1 @@
+<a href="c.php?fname=Henry&lname=Ford">click here </a>

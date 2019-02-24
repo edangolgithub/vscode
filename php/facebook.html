@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function readyfunction()
+             {
+                        if (this.readyState == 4 && this.status == 200) 
+                        {
+            
+                            document.getElementById("a").innerHTML = this.responseText;
+                        }
+            }
+            function readyfunction1()
+             {
+                        if (this.readyState == 4 && this.status == 200) 
+                        {
+            
+                            document.getElementById("b").innerHTML = this.responseText;
+                        }
+            }
+            function x()
+             {
+                
+                    var xmlhttp = new XMLHttpRequest(); //crerate akjax objext            
+                    xmlhttp.onreadystatechange =  readyfunction; 
+                    xmlhttp.open("post", "like.php", true);
+                    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xmlhttp.send();
+             }
+             function preload()
+             {
+                var xmlhttp = new XMLHttpRequest(); //crerate akjax objext            
+                    xmlhttp.onreadystatechange =  readyfunction1; 
+                    xmlhttp.open("post", "fbload.php", true);
+                    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xmlhttp.send();
+             }
+            
+            </script>
+</head>
+<body onload="preload()">
+    <img src="pp.jpg" height="300" />
+   <a href="#"onclick="x()" > <img src="fb.png" height="30" /></a>
+   <span id="b"></span>
+   <div id="a"></div>
+   
+</body>
+</html>
