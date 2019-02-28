@@ -45,7 +45,7 @@ $result = $conn->query($sql);
             <td><?php echo $row['costumername']; ?></td>
             <td><?php echo $row['costumeraddress'];?></td>
             <td><?php echo $row['costumerdetail'];?></td>
-            <td><a href="updatetab.php?id=<?php echo $row['costumerid']; ?>"><button class="btn btn-warning">update</button></a></td>
+            <td><a href="updatetab1.php?id=<?php echo $row['costumerid']; ?>"><button class="btn btn-warning">update</button></a></td>
             <td><a href="delete.php?id=<?php echo $row['costumerid']; ?>"><button class="btn btn-danger">delete</button></a></td>
           </tr>
           <?php
