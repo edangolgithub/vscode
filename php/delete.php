@@ -14,8 +14,9 @@ $sql = "delete from costumer where costumerid='".$id."'";
 $result = $conn->query($sql);
 
 
+
 ?>
 <script language="javascript">
     alert("deleted");
-    window.location.href = "tab.php"
+    window.location.href = "tab.php";
 </script>

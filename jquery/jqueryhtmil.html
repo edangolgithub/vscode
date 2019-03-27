@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+    var a= $('h1').text();
+    //alert(a);
+   $("#txt").keyup(function()
+   {
+    var a= $('#txt').val();
+    //alert(a);
+   })
+$("#u").click(function(){
+  $('h2').text("suresh");
+    });
+    $("#aa").attr("href","https://www.google.com");
+});
+
+    </script>
+</head>
+<body>
+    <button class="q"></button>
+    <h2></h2>
+    <h1>hello</h1>
+    <input type="text" id="txt" />
+    <a id="aa" >click</a>
+</body>
+</html>

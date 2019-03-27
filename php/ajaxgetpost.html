@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(){
+    $("#w").click(function(){
+      $.post("abc.php",{abc:5,d:8}, function(data){
+    alert("Data: " + data );
+  });
+});
+});
+    </script>
+</head>
+<body>
+    <button id="w">tyt</button>
+</body>
+</html>

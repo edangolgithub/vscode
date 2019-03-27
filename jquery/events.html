@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    h1{
+        border:solid 1px #f00;
+    }
+    </style>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+
+$('h1').mouseenter(function(){
+
+    $('h1').css("color","red");
+});
+
+$('h1').mouseleave(function(){
+
+$('h1').css("color","black");
+});
+
+$("#hide").click(function(){
+  $("h1").hide(5000);
+});
+
+$("#show").click(function(){
+  $("h1").show(5000);
+});
+$("#to").click(function(){
+  $("h1").toggle(1000,function(){
+      alert("animation finished");
+  });
+});
+
+$("#bb").click(function(){
+  $("h1").fadeOut(5000);
+  
+});
+$("#b").click(function(){
+  $("h1").fadeIn(5000);
+  
+});
+
+$("#c").click(function(){
+  $("h1").fadeTo("slow", .5);
+  
+});
+$("#d").click(function(){
+  $("h1").slideUp();
+  
+});
+$("#e").click(function(){
+  $("h1").animate({
+    left: '250px',
+    opacity: '0.5',
+    height: '150px',
+    width: '150px',color:"yellow"
+  },{
+    duration:5000}).fadeOut(5000).fadeIn(2000);
+}); 
+    });
+    </script>
+</head>
+<body>
+        <button id="d">slide</button>
+    <h1>djsfbjk djkfbndsjki jdefhioeds jkdesfhuiew</h1>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="to">toggle</button>
+    <div>
+        <button id="bb">fadeout</button>
+        <button id="b">fadeint</button>
+    </div>
+    <button id="c">fadeto</button>
+    <button id="e">animate</button>
+</body>
+</html>
