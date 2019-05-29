@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+
+       function dothat()
+          {
+              document.write("do that");
+          } 
+          function dothis(message)
+          {
+              document.write(message);
+          } 
+          function showmessage()
+          {
+              alert("hi i am java script");
+          }
+
+          function getmessage()
+          {
+              message=document.getElementById("txt").value;
+              alert(message);
+          }
+
+         /*  dothat();
+          dothis("this is secont message"); */
+
+    </script>
+</head>
+<body>
+  <button onclick="dothat()" >ok</button>
+  <button onclick="showmessage()" >ok</button>
+  <input type="text" id="txt" />
+  <button onclick="getmessage()" >ok</button>
+
+</body>
+</html>

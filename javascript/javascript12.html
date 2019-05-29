@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>File</title>
+<script>
+function showmessage ()
+{
+    alert("Be Carefull!!!")
+}
+function dothis(message)
+          {
+              document.write(message);
+          }
+          function dothis()
+          {
+              message=document.getElementById("password").value;
+              alert(message);
+
+          }
+</script>
+</head>
+<body>
+        <p>what may javascript may do?<p/>
+            <button onclick="showmessage()">click it!</button>
+            <button onclick="dothis('Hello everybody')">ok</button>
+            <input type="password" id="password"/>
+            <button onclick="dothis()">okay !!!!!</button>
+</body>
+</html>
