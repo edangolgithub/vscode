@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       /*  ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            border-top: 1px solid red;
+        }
+        div>p {
+            display: inline;
+        } */
+
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: black;
+            height: 70px;
+        }
+        li{
+            display: inline-block;
+            margin: 0;
+            margin-left: 35px;
+            margin-right: 10px;
+            padding-top:25px;
+            
+            
+        }
+        li a{
+            text-decoration:none;
+            color: white;
+            text-transform: uppercase;
+           
+        }
+        li a:hover{
+            color: gray;
+        }
+        li a::before
+        {
+            content: '';
+            display: block;                    
+            height: 2px;
+            width: 0%;
+            background-color: white;
+            transition: all ease-in-out 500ms;
+        }
+
+        li a:hover::before
+        {
+          width: 100%;
+        }
+        img
+        {
+            height: 50px;
+            float:left;
+            vertical-align: middle;
+            margin: 20px;
+            margin-top: 10px;
+        }
+        .cont{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <img src="a.png" alt="">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+    </ul>
+</div>
+
+</body>
+
+</html>
