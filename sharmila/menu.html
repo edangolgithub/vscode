@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: black;
+            height: 70px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0;
+            margin-left: 35px;
+            margin-right: 10px;
+            padding-top: 25px;
+        }
+        li a
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        img {
+            height: 50px;
+            float:left;
+            vertical-align: middle;
+            margin: 20px;
+            margin-top: 10px;
+        }
+    li a::before
+        {
+         content: '';
+         background-color: white;
+         width: 0%;
+         display: block;
+         height: 2px;;
+         transition: all ease-in-out 500ms;
+        }
+        li a:hover::before
+        {
+          width: 100%;
+        } 
+       li a:hover{
+           color: gray;
+       }
+    </style>
+
+
+</head>
+
+<body>
+    <img src="../sarfaraz/a.png" alt="">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Face</a></li>
+    </ul>
+</body>
+
+</html>
