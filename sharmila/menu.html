@@ -14,52 +14,93 @@
 
         li {
             display: inline-block;
-            margin: 0;
-            margin-left: 35px;
+           float: left;         
             margin-right: 10px;
             padding-top: 25px;
         }
-        li a
-        {
+
+        li a {
             color: white;
             text-decoration: none;
+            font-size: 20px;
+            transition: all ease-in-out 500ms;
         }
 
-        img {
+        #logo {
             height: 50px;
-            float:left;
+            float: left;
             vertical-align: middle;
             margin: 20px;
             margin-top: 10px;
+            opacity: 1;
+            transition: opacity 1s;
         }
-    li a::before
-        {
-         content: '';
-         background-color: white;
-         width: 0%;
-         display: block;
-         height: 2px;;
-         transition: all ease-in-out 500ms;
-        }
-        li a:hover::before
-        {
-          width: 100%;
-        } 
-       li a:hover{
-           color: gray;
-       }
-    </style>
 
+        #logo:hover {
+            opacity: .5;
+        }
+
+        li a::before {
+            content: '';
+            background-color: white;
+            width: 0%;
+            display: block;
+            height: 2px;
+            ;
+            transition: all ease-in-out 500ms;
+
+        }
+
+        li a:hover:not(#e)::before {
+            width: 100%;
+        }
+
+        li a:hover {
+            color: gray;
+        }
+
+        #ic {
+            height: 40px;
+            margin-top: -10px;
+            transition: opacity ease-in-out 1s;
+        }
+
+        #ic:hover {
+            opacity: .4;
+        }
+
+        .active {
+            content: '';
+            background-color: white;
+            width: 100%;
+            display: block;
+            height: 2px;
+            color: gray;
+        }
+    </style>
+    <script>
+        function setactive(el) {
+            var all = document.getElementsByTagName("a");
+            for (let index = 0; index < all.length; index++) {
+                
+                all[index].classList.remove("active");
+            }
+               
+           
+            el.classList.add("active");
+        }
+    </script>
 
 </head>
 
 <body>
-    <img src="../sarfaraz/a.png" alt="">
+    <img id="logo" src="../sarfaraz/a.png" alt="">
     <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active" >Home</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Face</a></li>
+        <li style="float:right"><a href="#" id="e"><span><img id="ic" src="fb.png" alt="">
+                </span></a></li>
     </ul>
 </body>
 

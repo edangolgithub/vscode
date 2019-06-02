@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        img{
+            height:70px ;
+            float: left;
+            opacity: 0.5;
+        }
+        img:hover{
+            opacity: 1;
+        }
+        ul{
+  background-color: black;
+  height: 80px;
+  
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+text-transform: capitalize;
+            
+        }
+        li{
+            display: inline-block;
+            margin-left: 40px;
+            margin-right: 10px;
+            padding: 20px; 
+
+        }
+        li a::before{
+            
+         content: '';
+         background-color: white;
+         width: 0%;
+         display: block;
+         height: 2px;;
+         transition: all ease-in-out 500ms;
+        
+        }
+        li a:hover::before{
+            width: 100%;
+        }
+        li a:hover{
+            color: violet;
+        }
+        #a{
+            float: right;
+        }
+        i{
+            color:blue;
+            font-size: 50px;
+        }
+        .j{
+            color:brown;
+            font-size: 60px;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <img src="../sarfaraz/tiger.jpg" alt="">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">picture</a></li>
+        <li id="a"><a href="#"> <i  class="fas fa-award j"></i></a></li>
+    </ul>
+    <i class="fas fa-cloud"></i>
+    <i  class="fas fa-award j"></i>
+</body>
+</html>

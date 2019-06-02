@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    ul{
+        background-color: black;
+        height: 70px;
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+    }
+    li{
+        display: inline-block;
+        margin-left: 35px;
+            margin-right: 10px;
+            padding-top:25px;
+    }
+    img{
+            height: 50px;
+            float:left;            
+            margin: 20px;
+            margin-top: 10px;
+    }
+div::before{
+    content:"before";
+}
+div::after{
+    content:"after";
+}
+li a::before
+{
+    content: '';
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    display: block;
+    transition: width 500ms;
+}
+ li a:hover::before
+ {
+     width: 100%;
+ }
+ li a:hover
+ {
+     color: gray;
+ }
+    </style>
+</head>
+<body>
+
+
+        <img src="a.png" alt="">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li style="float:right"><a href="#">Facebook</a></li>
+    </ul>
+</body>
+</html>
