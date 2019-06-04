@@ -21,7 +21,7 @@
         background-color: aqua;
         height:60px;
      }
-     li a::before{
+     li a::before{ 
          content: '';
          width:0%;
          background-color: black;
@@ -43,10 +43,30 @@
          opacity:.4;
      }
      li a:hover{
-         color:rgb(231, 168, 223);
+         color:green;
      }
      #img{
          float:right;
+         }
+         #main{
+             width:75%;
+             height:700px;
+             background-image: linear-gradient(to right,blue,lightblue);
+             float:right;
+             margin-bottom: 10px;
+         }
+         #sidebar{
+             width:24.2%;
+             height:700px;
+             background-image: linear-gradient(to right,red,yellow);
+             float:left;
+             margin-bottom:10px;
+         }
+         #footer{
+             height:150px;
+             background-color: aquamarine;
+             clear:both;
+             
          }
     </style>
 </head>
@@ -59,5 +79,22 @@
     <li><a href="#">CONTACT</a></li>
     <li><a href="#">EMAIL</a></li>
     </ul>
+    <div id="main"></div>
+    <div id="sidebar">
+        <p style="padding: 10px;text-transform: capitalize;text-align: center;font-size: 23px">
+        <img  style="height:240px" src="a.jpg" alt="beauty storm" />
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        Lorem ipsum is apoetic language.Lorem ipsum is apoetic language.
+        </p>
+    </div>
+    <div id="footer">
+        <marquee direction="right" behavior="alternate" scrollamount=10><footer style="font-size:30px;padding-top: 50px;color: rgb(238, 28, 203)">cars123@gmail.com</footer></marquee>
+    </div>
 </body>
 </html>
