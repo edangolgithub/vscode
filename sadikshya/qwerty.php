@@ -8,7 +8,20 @@
 </head>
 <body>
     <?php
-echo "<h1>hello</h1>";
+$u="qwerty";
+$p="asdfgh";
+
+$x=$_REQUEST["user-id"];
+$a=$_REQUEST["qwer"];
+
+if($x==$u && $a==$p)
+{
+echo"Wellcome to your account";
+}
+else 
+{
+    echo"Your email/user-ID or password is incorrect";
+}
 
 ?>
 </body>

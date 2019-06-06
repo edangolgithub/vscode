@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="a" onclick=chanebg(this)>black</button>
+    <button id="b" onclick="chanebg(this)">red</button>
+    <button id="c" onclick="chanebg(this)">green</button>
+    <button id="d" onclick="chanebg(this)">yellow</button>
+    <button id="e" onclick="chanebg(this)">pink</button>
+
+
+    <script>
+function chanebg(el)
+{
+ if(el.getAttribute("id")=="a")
+ {
+    document.getElementsByTagName("body")[0].style.backgroundColor="black";
+ }
+ else if(el.getAttribute("id")=="b")
+ {
+    document.getElementsByTagName("body")[0].style.backgroundColor="red";
+ }
+ else if(el.getAttribute("id")=="c")
+ {
+    document.getElementsByTagName("body")[0].style.backgroundColor="green";
+ }
+ else if(el.getAttribute("id")=="d")
+ {
+    document.getElementsByTagName("body")[0].style.backgroundColor="yellow";
+ }
+ else if(el.getAttribute("id")=="e")
+ {
+    document.getElementsByTagName("body")[0].style.backgroundColor="pink";
+ }
+ 
+}
+
+x=5;
+x=x/5;
+        a = 70;  //  70>1 70<80 70!=4 70==70
+
+        if (a == 1) {
+            document.write("hello");
+        }
+        else if (a == 70) 
+        {
+            document.write("bye");
+        }
+        else if (a!=5) {
+            document.write("good");
+        }
+       
+        else if (a == 7) {
+            document.write("micro");
+        }
+
+
+        else {
+            document.write("hi");
+        }
+
+    </script>
+</body>
+
+</html>
