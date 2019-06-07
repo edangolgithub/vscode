@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var n = ["ram", "shyam", "hari"];
+        var a = n.toString();
+        b=n.join(" -- ");
+        n.pop();
+        n.pop();
+        n.push("sangat");
+        n.shift();
+        n.push("apple");
+        n.unshift("banana");
+        for(i=0;i<n.length;i++)
+        {
+           document.write(n[i]);
+        }
+
+        var n = ["ram", "shyam", "hari"];
+   n.splice(1,2,"krishna");
+   for(i=0;i<n.length;i++)
+        {
+            document.write(n[i]);
+        }
+num=[250,5,-600,11543,6,9,8];
+sm=num[0];
+lg=num[0];
+for(i=0;i<num.length;i++)
+{
+    if(sm>num[i])
+    {
+        sm=num[i];
+    }
+    if(lg<num[i])
+    {
+        lg=num[i];
+    }
+}
+
+document.write("small number : "+sm);
+
+document.write("<br /> ");
+document.write("large number : "+lg);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

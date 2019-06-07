@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>file</title>
+    <Script>
+    var s=["Linus","Lew","Austin"]
+    var d=s.toString();
+     document.write(d)
+    document.write("<br/>")
+    s.pop();
+    for (let index = 0; index < s.length; index++) {
+        ;
+       document.write(s[index]) 
+    }
+    document.write("<br/>")
+    s.push("asdfg")
+    for (let index = 0; index < s.length; index++) {
+        ;
+        document.write(s[index]) 
+    }
+    document.write("<br/>")
+    
+    s.shift();
+    for (let index = 0; index < s.length; index++) {
+        ;
+        document.write(s[index]) 
+    }
+    document.write("<br/>")
+    
+    s.unshift("sangat");
+    for (let index = 0; index < s.length; index++) {
+        ;
+        document.write(s[index]) 
+    }
+    document.write("<br/>")
+    
+    num=[66-2,6-8,99*1,68-66,1-1]
+    sm=num[0]
+    lg=num[0]
+
+   
+       
+    for(t=0;t<num.length;t++)
+{
+    if(sm>num[t])
+{
+    sm=num[t];
+}
+   if(lg<num[t])
+   {
+   lg=num[t];
+   }
+    }
+   document.write ("small Number : "+sm);
+   document.write ("<br/>");
+
+   document.write ("large Number : "+lg);
+   document.write ("<br/>");
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
