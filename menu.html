@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            background-color: black;
+            height: 70px;
+            ;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 50px;
+            padding-top: 25px;
+        }
+
+        li a:hover {
+            color: red;
+        }
+
+        li a::before {
+            content: '';
+            width: 0%;
+            display: block;
+            height: 2px;
+            background-color: red;
+            transition: width 500ms;
+        }
+
+        li a:hover::before {
+            width: 100%;
+        }
+        img{
+            height: 50px;
+            float: left;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../vscode/sarfaraz/a.jpg" alt="">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li id="right"><a href="#">Facebook</a></li>
+    </ul>
+</body>
+
+</html>
