@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    ul{
+        background-color: black;
+        height: 70px;
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    li a::before{
+        content: '';
+        height: 3px;
+        width: 0%;
+        display: block;
+        background-color: white;
+        transition: width 500ms;
+    }
+    li a:hover::before
+    {
+width: 100%;
+    }
+    
+    li{
+      display: inline-block;
+      margin-left: 50px;
+      padding-top: 25px;
+    }
+    </style>
+</head>
+<body>
+    display: inline block flex inline-block
+
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Face</a></li>
+    </ul>
+</body>
+</html>
