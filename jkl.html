@@ -6,9 +6,11 @@
     <script>
     $(document).ready(function(){
 $("#abc").css("color","red");
-$(".def").css({"font-"})
-
-
+$(".def").css({"font-size":"100px","border":"10px solid red"});
+$("div").click(function(){
+  $(this).css("font-size","100px");
+  $(this).css("border","10px solid red");
+});
 
 
     });
@@ -17,5 +19,6 @@ $(".def").css({"font-"})
 <body>
     <p id="abc">hjklkj</p>
     <p class="def">hello</p>
+    <div>kjhkh</div>
 </body>
 </html>
