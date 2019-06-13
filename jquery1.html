@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   
+
     <title>Document</title>
     <script src=jquery.js>
-         </script>
-         <script>
-         </script>
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $("div").click(function () {
+
+                $("h1").hide();
+
+            });
+
+            $("h2").click(function () {
+                $("h1").show();
+            });
+
+
+        });
+    </script>
 </head>
+
 <body>
-    
+    <h1>hii</h1>
+    <div>click</div>
+    <h2>click</h2>
 </body>
+
 </html>
