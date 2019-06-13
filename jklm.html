@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery1.js"></script>
+    <script>
+    $(document).ready(function(){
+     $("p").mouseover(function(){
+         $("p").css("color","green");
+     });
+
+     $("p").mouseout(function(){
+       $(this).css("color","white");
+     });
+
+     $("#abc").click(function(){
+         alert("hello");
+     });
+
+     $("#abc").focus(function(){
+         $(this).css("background-color","yellow");
+     });
+     $("#abc").blur(function(){
+         $(this).css("background-color","white");
+     });
+
+
+    });
+    
+    
+    </script>
+</head>
+<body>
+    <p>
+        asduykasdjs
+    </p>
+    <input type="text" id="abc"/>
+</body>
+</html>

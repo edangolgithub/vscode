@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    p{
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        margin: auto;
+        border: 1px solid red;
+    }
+    
+    </style>
+    <script>
+    
+     function add()
+     {
+         a=5;
+         b=6;
+         c=a+b;
+         document.write(c)
+     }
+function changecolor()
+{
+ document.getElementById("abc").style.backgroundColor="gray";
+}
+function changecolor1()
+{
+ document.getElementById("abc").style.backgroundColor="white";
+}
+function xyz()
+{
+    alert("you clicked h1 element")
+}
+function xyzz()
+{
+    alert("ypou double clicked");
+}
+function qwerty()
+{
+    document.getElementById("abc").style.borderColor="chartreuse";
+}
+     
+    </script>
+</head>
+<body>
+    <button  onclick="qwerty()">click</button>
+    <p id="abc">this is paragraph</p>
+    <h1 ondblclick="xyzz()" onmouseover="changecolor()" onmouseout="changecolor1()" >mouse over me</h1>
+</body>
+</html>
