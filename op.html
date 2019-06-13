@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    p,h1{
+        border: 1px solid blue;
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+    }
+    
+    </style>
+    <script src="jquery.js">
+    </script>
+
+    <script>
+    $(document).ready(function(){
+ $("p").mouseover(function(){
+$("body").css("background-color","red");
+ });
+
+ $("p").mouseout(function(){
+$("body").css("background-color","white");
+ });
+
+$("body").dblclick(function(){
+    $("p").hide();
+});
+
+$("h1").click(function(){
+    $("p").show();
+});
+
+
+
+
+    });
+    
+    
+    
+    
+    
+    </script>
+</head>
+<body>
+</body>
+</html>
