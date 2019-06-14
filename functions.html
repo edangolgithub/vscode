@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+   
+    
+    function like()
+    {
+      document.getElementById("l").innerHTML="You Liked this!!";
+    }
+    
+    function add(a,b)
+    {
+        c=a+b;
+        document.write(c);
+    }
+
+
+    function momomachine(pitho,keema,pyaz,masala) //parameter
+    {
+        return (pitho*keema+pyaz+masala) + "plates of momo using "+ pitho +" kilo pitho "
+        +keema +" kilo keema "+ pyaz + " numbers of pyaz "+ masala +" kinds of masala";
+    }
+    
+  //a= momomachine(5,5,10,5);
+  // document.write(momomachine(5,5,10,5));
+a=momomachine(2,3,12,5);
+document.write(a);
+    </script>
+</head>
+<body>
+    <a id="l" href="#" onclick="like()">Like</a>
+    <p onclick="add(9,81)" >this para</p>
+</body>
+</html>
