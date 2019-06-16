@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        $("h2").text("good bye");
+
+        alert($("h4").text());
+        
+     $("#a").val("bye");
+
+     $("button").click(function(){
+       $("#b").val($("#a").val());
+     });
+
+     $("h4").html("<h1>hello</h1>");
+    });
+   
+    
+    </script>
+</head>
+<body>
+    <button>click</button>
+    <h4>sadasd</h4>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <h2>jkl</h2>
+</body>
+</html>
