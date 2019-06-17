@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+
+$(".hi").text("hi")
+$(".hi").mouseover(function(){
+$(".hi").css( "border"," 2px inset yellow")
+$(".hi").css(  "color","red" )
+
+
+
+})
+$(".hi").mouseleave(function(){
+    $(".hi").css("color","gray")
+    $(".hi" ).css ( "font-size","100px")
+    
+
+
+
+} )
+
+
+
+
+
+})
+
+
+</script>
+
+   
+    <title>Document</title>
+</head>
+<body>
+    <h1 class= "hi">
+        i live in kathmandu
+    </h1>
+    
+</body>
+</html>
