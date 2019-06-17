@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("h1").text("hello");
+            $("h1").mouseenter(function () {
+
+                $('h1').css("color", "red");
+                $('h1').css("border", "2px inset green");
+
+               //$('h1').css({"color":"red","border":"2px inset green"});
+            })
+
+            $("h1").mouseleave(function () {
+
+                $('h1').css("color", "black");
+                $('h1').css("border", "none");
+
+            })
+
+
+
+
+
+
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1></h1>
+</body>
+
+</html>
