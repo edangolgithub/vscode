@@ -1,0 +1,29 @@
+<script>
+var numbers = [2, 4, 3, 1, 5];
+numbers.forEach(a => { // lambda expression
+    document.write(a);
+});
+document.write("<br>");
+x=numbers.map(a=>a*3);
+document.write(x);
+document.write("<br>");
+y=x.filter(a=>a>10);
+document.write(y);
+document.write("<br>");
+z=numbers.reduce((p,q)=>p*q); //l  1
+
+document.write(z);
+document.write("<br>");
+console.log("heelloi");
+
+z=numbers.reduce(function(p,q){ // traditional 2
+    return p*q;
+})
+
+z=numbers.reduce(abc);
+function abc(p,q) //actual way 3
+{
+    return p*q;
+    
+}
+</script>
