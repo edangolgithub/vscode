@@ -26,7 +26,7 @@ $studentid=$_REQUEST["studentid"];
   <form action="editstudent.php"  method="POST">
     <div class="form-group">
      
-        <input type="text" class="form-control" placeholder="ID" name="studentid" value="<?php echo $studentid ?>" />
+        <input type="hidden"   class="form-control disabled" placeholder="ID" name="studentid" value="<?php echo $studentid ?>" />
         
       </div>
     <div class="form-group">

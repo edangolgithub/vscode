@@ -20,4 +20,6 @@ echo "New records created successfully";
 
 $stmt->close();
 $conn->close();
+
+header('Location: list.php');
 ?>

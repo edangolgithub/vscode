@@ -12,6 +12,7 @@
 <body>
 //list
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "mysqlpassword";
@@ -65,7 +66,11 @@ if ($result->num_rows > 0) {
           
           > Edit</a>
           </button>
-          <button class="btn btn-danger">Delete</button> 
+          <button class="btn btn-danger">
+          <a style="text-decoration:none; color:white" href="deletestudent.php?studentid=<?php echo $row['studentid']; ?>">
+          Delete
+          </a>
+          </button> 
         </td>      </tr>
       <?php
   }

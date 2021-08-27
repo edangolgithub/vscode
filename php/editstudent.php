@@ -25,5 +25,5 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssii",$name,$grade,$age,$studentid);
 $stmt->execute();
 echo "success";
-
+header('Location: list.php');
 ?>
