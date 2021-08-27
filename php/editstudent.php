@@ -27,3 +27,4 @@ $stmt->execute();
 echo "success";
 header('Location: list.php');
 ?>
+changed code
