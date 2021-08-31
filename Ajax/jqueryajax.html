@@ -1,0 +1,19 @@
+<div id="data">data comes here</div>
+
+<button id="btn" >get data</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+
+
+
+    $("#btn").click(function () {
+      $("#data").load("abc.txt");
+    });
+
+
+
+  });
+</script>
