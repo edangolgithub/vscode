@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>search</title>
+  </head>
+  <body>
+    <select onchange="callajax(this.value)">
+      <option value="Evan">Evan</option>
+      <option value="Ram">Ram</option>
+      <option value="shyam">shyam</option>
+      <option value="kris">kris</option>
+      <option value="Aroon">Aroon</option>
+    </select>
+    <div id="x"></div>
+    <script>
+    function callajax(val) {
+        
+    var ajax = new XMLHttpRequest();// create ajax variable
+    ajax.open("GET", "search.php?name="+val); // mention method and url  get /post
+    ajax.send(); // request
+
+    
+    ajax.onload=datahandler; // handle response data
+
+    function datahandler() {
+      
+      document.getElementById("x").innerHTML=ajax.responseText;
+    }
+    
+  }
+    </script>
+  </body>
+</html>
